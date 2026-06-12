@@ -16,7 +16,7 @@
 
 ## 启动方式
 
-1. 创建 MySQL 数据库：`smart_warehouse`，账号密码默认 `root/root`。
+1. 导入完整数据库文件：`cmd /c "mysql -uroot -proot < database\smart_warehouse.sql"`。
 2. 后端：进入 `backend`，执行 `./mvnw spring-boot:run`。
 3. 前端：进入 `frontend`，执行 `npm install` 后运行 `npm run dev`，默认访问 `http://localhost:15174`。
 
