@@ -1,0 +1,90 @@
+* { box-sizing: border-box; }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  color: #1f2937;
+  background: #f5f7fb;
+  font-family: "Microsoft YaHei", Arial, sans-serif;
+}
+#app {
+  min-height: 100%;
+}
+.page-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 16px;
+}
+.page-card.table-page {
+  height: calc(100vh - 92px);
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.table-wrap {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.table-wrap .el-table {
+  width: 100%;
+}
+.table-wrap .el-table__inner-wrapper,
+.table-wrap .el-table__body-wrapper,
+.table-wrap .el-scrollbar,
+.table-wrap .el-scrollbar__wrap {
+  width: 100%;
+}
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.toolbar .el-input,
+.toolbar .el-select {
+  width: 220px;
+}
+.table-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  white-space: nowrap;
+}
+.action-column .cell {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.fill-column .cell {
+  min-height: 1px;
+  padding: 0;
+}
+.fill-column {
+  background: #fff;
+}
+.dialog-body {
+  max-height: 64vh;
+  overflow: auto;
+  padding-right: 4px;
+}
+.pagination {
+  margin-top: 14px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  row-gap: 8px;
+  flex-shrink: 0;
+}
+.muted { color: #6b7280; }
+.status-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #409eff;
+  margin-right: 6px;
+}

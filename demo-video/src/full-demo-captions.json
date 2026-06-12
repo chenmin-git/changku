@@ -1,0 +1,13 @@
+[
+  { "text": "这是智能仓库管理系统，前端用 Vue3 和 Element Plus，后端是 Spring Boot，数据库用 MySQL。", "startMs": 0, "endMs": 4300, "timestampMs": 0, "confidence": 1 },
+  { "text": "我先讲亮点：除了常规出入库、盘点和预警，这里还接了一个懂库存上下文的 AI 助手。", "startMs": 4300, "endMs": 9500, "timestampMs": 4300, "confidence": 1 },
+  { "text": "它会读取当前库存、待办、预警和趋势数据，直接生成补货优先级。", "startMs": 9500, "endMs": 13500, "timestampMs": 9500, "confidence": 1 },
+  { "text": "遇到高风险库存，也可以让它解释原因，并给出处理顺序。", "startMs": 13500, "endMs": 17200, "timestampMs": 13500, "confidence": 1 },
+  { "text": "趋势图不用一项项念，AI 会把近七天入出库变化整理成业务结论。", "startMs": 17200, "endMs": 21000, "timestampMs": 17200, "confidence": 1 },
+  { "text": "回到基础功能，工作台先展示关键指标，仓库状态打开就能看见。", "startMs": 21000, "endMs": 24800, "timestampMs": 21000, "confidence": 1 },
+  { "text": "风险排行按库存缺口排好，方便仓管员先处理最急的货品。", "startMs": 24800, "endMs": 28500, "timestampMs": 24800, "confidence": 1 },
+  { "text": "货品档案支持分页、查询、筛选和图片展示，日常维护够用。", "startMs": 28500, "endMs": 32300, "timestampMs": 28500, "confidence": 1 },
+  { "text": "新增和编辑表单尽量用下拉选择，减少手填错误。", "startMs": 32300, "endMs": 36000, "timestampMs": 32300, "confidence": 1 },
+  { "text": "入库、出库、盘点、预警这几块组成主要业务闭环。", "startMs": 36000, "endMs": 43000, "timestampMs": 36000, "confidence": 1 },
+  { "text": "基础资料维护仓库、分类和供应商，操作日志负责留下处理记录。", "startMs": 43000, "endMs": 50000, "timestampMs": 43000, "confidence": 1 }
+]

@@ -1,0 +1,16 @@
+node_modules/
+dist/
+target/
+*.log
+docs/video-check*.png
+docs/demo-frame-check.png
+docs/ai-answer-debug.txt
+
+frontend/dist/
+demo-video/node_modules/
+demo-video/out/
+backend/target/
+
+.env
+.env.local
+uploads/tmp/

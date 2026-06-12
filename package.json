@@ -1,0 +1,16 @@
+{
+  "name": "changku",
+  "version": "1.0.0",
+  "description": "一个用于毕业设计演示的前后端分离仓库管理系统，包含登录鉴权、角色菜单、仓库基础资料、出入库、盘点、库存预警、ECharts 工作台、图片上传和智能库存助手。",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

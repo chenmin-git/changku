@@ -1,0 +1,31 @@
+server:
+  port: 18080
+
+spring:
+  application:
+    name: smart-warehouse
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/smart_warehouse?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: root
+  sql:
+    init:
+      mode: never
+      schema-locations: classpath:schema.sql
+      data-locations: classpath:data.sql
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 10MB
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+
+app:
+  upload-dir: uploads
+  spark:
+    base-url: https://spark-api-open.xf-yun.com/v1/chat/completions
+    model: generalv3
+    api-key: ${SPARK_API_KEY:}
