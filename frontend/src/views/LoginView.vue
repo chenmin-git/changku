@@ -1,5 +1,5 @@
 <template>
-  <div class="login-page">
+  <div class="login-page" :style="{ '--login-bg': `url(${loginWarehouseUrl})` }">
     <section class="login-hero">
       <div class="hero-topline">
         <span class="brand-badge"><el-icon><Box /></el-icon></span>
@@ -71,6 +71,7 @@ import { reactive, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { ElMessage } from 'element-plus'
 import { useAuthStore } from '../store/auth'
+import loginWarehouseUrl from '../assets/login-warehouse.jpg'
 
 const router = useRouter()
 const auth = useAuthStore()
@@ -105,9 +106,11 @@ const submit = async () => {
 .login-page {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: minmax(0, 1.16fr) 480px;
+  grid-template-columns: minmax(0, 1fr) minmax(460px, 520px);
   background:
-    linear-gradient(135deg, rgba(24, 48, 77, .94), rgba(22, 93, 84, .9)),
+    linear-gradient(90deg, rgba(11, 22, 38, .86) 0%, rgba(13, 42, 55, .72) 48%, rgba(11, 22, 38, .56) 100%),
+    linear-gradient(180deg, rgba(15, 23, 42, .28), rgba(15, 23, 42, .78)),
+    var(--login-bg) center / cover no-repeat,
     #18304d;
   color: #172033;
   overflow: hidden;
@@ -130,7 +133,15 @@ const submit = async () => {
     linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);
   background-size: 42px 42px;
-  mask-image: linear-gradient(90deg, #000 0%, transparent 78%);
+  mask-image: linear-gradient(90deg, #000 0%, transparent 72%);
+}
+.login-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(34, 197, 94, .2), transparent 34%, rgba(59, 130, 246, .18));
+  mix-blend-mode: screen;
+  opacity: .68;
 }
 .hero-topline,
 .hero-copy,
@@ -206,8 +217,10 @@ const submit = async () => {
 }
 .login-card {
   align-self: center;
+  justify-self: center;
+  box-sizing: border-box;
   width: 420px;
-  margin-right: 56px;
+  margin: 0;
   background: rgba(255, 255, 255, .96);
   border: 1px solid rgba(255,255,255,.72);
   border-radius: 8px;
