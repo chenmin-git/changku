@@ -16,7 +16,7 @@
 
 ## 启动方式
 
-1. 导入完整数据库文件：`cmd /c "mysql -uroot -proot < database\smart_warehouse.sql"`。
+1. 使用 MySQL Workbench 或 Navicat 导入 `database/smart_warehouse.sql`，默认账号密码为 `root/root`。
 2. 后端：进入 `backend`，执行 `./mvnw spring-boot:run`。
 3. 前端：进入 `frontend`，执行 `npm install` 后运行 `npm run dev`，默认访问 `http://localhost:15174`。
 
