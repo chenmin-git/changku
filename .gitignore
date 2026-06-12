@@ -2,6 +2,7 @@ node_modules/
 dist/
 target/
 *.log
+.playwright-mcp/
 docs/video-check*.png
 docs/demo-frame-check.png
 docs/ai-answer-debug.txt
